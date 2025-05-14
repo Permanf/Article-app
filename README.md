@@ -25,8 +25,8 @@ Develop a simple REST API using NestJS that includes authentication, CRUD operat
 
 1. **Clone repository**
 ```bash
-git clone https://github.com/yourusername/nestjs-api.git
-cd nestjs-api
+git clone https://github.com/Permanf/Article-app.git
+cd Article-app
 ```
 
 2. **Install dependencies**
@@ -54,15 +54,21 @@ npm run start:dev
 ## API Documentation
 
 1.**Authentication**
+```bash
 Endpoint	        Method	    Description	            Request Body Example
 /auth/register	    POST	    Register new user	    {"email":"user@test.com","password":"password"}
 /auth/login	        POST	    User login	            {"email":"user@test.com","password":"password"}
 
+```
+
 2.**Articles (Require JWT Authorization)**
 
+```bash
 Endpoint	    Method	    Description	                Query Params
 /articles	    GET	        Get paginated articles	    page, limit, authorId, startDate, endDate
 /articles/:id	GET	        Get single article	        -
 /articles	    POST	    Create new article	        {"title":"...","description":"..."}
 /articles/:id	PUT	        Update article	            {"title":"...","description":"..."}
 /articles/:id	DELETE	    Delete article	            -
+
+```
