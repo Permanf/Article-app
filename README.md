@@ -56,7 +56,7 @@ npm run start:dev
 1.**Authentication**
 ```bash
 Endpoint	        Method	    Description	            Request Body Example
-/auth/register      POST	    Register new user	    {"email":"user@test.com","password":"password"}
+/auth/register          POST	    Register new user	    {"email":"user@test.com","password":"password"}
 /auth/login	        POST	    User login	            {"email":"user@test.com","password":"password"}
 
 ```
@@ -65,10 +65,10 @@ Endpoint	        Method	    Description	            Request Body Example
 
 ```bash
 Endpoint	    Method	    Description	                Query Params
-/articles	    GET	        Get paginated articles	    page, limit, authorId, startDate, endDate
-/articles/:id	GET	        Get single article	        -
+/articles	    GET	            Get paginated articles	    page, limit, authorId, startDate, endDate
+/articles/:id	    GET	        Get single article	        -
 /articles	    POST	    Create new article	        {"title":"...","description":"..."}
-/articles/:id	PUT	        Update article	            {"title":"...","description":"..."}
-/articles/:id	DELETE	    Delete article	            -
+/articles/:id	    PUT	        Update article	            {"title":"...","description":"..."}
+/articles/:id	    DELETE	        Delete article	            -
 
 ```
