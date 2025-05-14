@@ -66,9 +66,9 @@ Endpoint	        Method	    Description	            Request Body Example
 ```bash
 Endpoint	    Method	    Description	                Query Params
 /articles	    GET	            Get paginated articles	    page, limit, authorId, startDate, endDate
-/articles/:id	    GET	        Get single article	        -
+/articles/:id	    GET	            Get single article	        -
 /articles	    POST	    Create new article	        {"title":"...","description":"..."}
-/articles/:id	    PUT	        Update article	            {"title":"...","description":"..."}
-/articles/:id	    DELETE	        Delete article	            -
+/articles/:id	    PUT	            Update article	            {"title":"...","description":"..."}
+/articles/:id	    DELETE	    Delete article	            -
 
 ```
